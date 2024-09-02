@@ -32,7 +32,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   void dispose() {
-    _loginPageCtr.dispose();
+    _loginPageCtr.removeListener(() {});
+    // _loginPageCtr.dispose();
     super.dispose();
   }
 

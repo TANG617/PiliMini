@@ -15,14 +15,16 @@ import '../../models/common/dynamic_badge_mode.dart';
 import '../../models/common/nav_bar_config.dart';
 
 import 'package:PiliMini/pages/login/index.dart';
+import 'package:PiliMini/pages/later/index.dart';
 
 class MainController extends GetxController {
   List<Widget> pages = <Widget>[
     // const HomePage(),
-    // const LoginPage(),
+    const LoginPage(),
     // const RankPage(),
     const DynamicsPage(),
-    const MediaPage(),
+    const LaterPage(),
+    // const MediaPage(),
   ];
   RxList navigationBars = defaultNavigationBars.obs;
   final StreamController<bool> bottomBarStream =

@@ -33,7 +33,7 @@ class LoginPageController extends GetxController
   final Gt3FlutterPlugin captcha = Gt3FlutterPlugin();
 
   CaptchaDataModel captchaData = CaptchaDataModel();
-  RxInt qrCodeLeftTime = 180.obs;
+  RxInt qrCodeLeftTime = 30.obs;
   Rx<String> statusQRCode = ''.obs;
 
   Map<String, dynamic> selectedCountryCodeId =
