@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/http/msg.dart';
-import 'package:PiliPalaX/models/msg/account.dart';
-import 'package:PiliPalaX/models/msg/session.dart';
+import 'package:PiliMini/http/msg.dart';
+import 'package:PiliMini/models/msg/account.dart';
+import 'package:PiliMini/models/msg/session.dart';
 
 import '../../models/msg/msgfeed_unread.dart';
 import '../../utils/storage.dart';
@@ -15,29 +15,29 @@ class WhisperController extends GetxController {
   Rx<MsgFeedUnread> msgFeedUnread = MsgFeedUnread().obs;
   RxList msgFeedTop = [
     {
-      "name":"回复我的",
-      "icon":Icons.message_outlined,
+      "name": "回复我的",
+      "icon": Icons.message_outlined,
       "route": "/replyMe",
       "enabled": true,
       "value": 0
     },
     {
-      "name":"@我",
-      "icon":Icons.alternate_email_outlined,
+      "name": "@我",
+      "icon": Icons.alternate_email_outlined,
       "route": "/atMe",
       "enabled": true,
       "value": 0
     },
     {
-      "name":"收到的赞",
-      "icon":Icons.favorite_border_outlined,
+      "name": "收到的赞",
+      "icon": Icons.favorite_border_outlined,
       "route": "/likeMe",
       "enabled": true,
       "value": 0
     },
     {
-      "name":"系统通知",
-      "icon":Icons.notifications_none_outlined,
+      "name": "系统通知",
+      "icon": Icons.notifications_none_outlined,
       "route": "/sysMsg",
       "enabled": true,
       "value": 0
@@ -52,7 +52,8 @@ class WhisperController extends GetxController {
       msgFeedTop[1]["value"] = msgFeedUnread.value.at;
       msgFeedTop[2]["value"] = msgFeedUnread.value.like;
       msgFeedTop[3]["value"] = msgFeedUnread.value.sys_msg;
-      if (GStorage.setting.get(SettingBoxKey.disableLikeMsg, defaultValue: false)) {
+      if (GStorage.setting
+          .get(SettingBoxKey.disableLikeMsg, defaultValue: false)) {
         msgFeedTop[2]["value"] = -1;
         msgFeedTop[2]["enabled"] = false;
       }

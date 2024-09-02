@@ -1,8 +1,8 @@
-import 'package:PiliPalaX/common/widgets/list_sheet.dart';
+import 'package:PiliMini/common/widgets/list_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/models/video_detail_res.dart';
-import 'package:PiliPalaX/pages/video/detail/index.dart';
+import 'package:PiliMini/models/video_detail_res.dart';
+import 'package:PiliMini/pages/video/detail/index.dart';
 
 class SeasonPanel extends StatefulWidget {
   const SeasonPanel({

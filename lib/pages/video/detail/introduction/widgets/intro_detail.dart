@@ -2,9 +2,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/widgets/stat/danmu.dart';
-import 'package:PiliPalaX/common/widgets/stat/view.dart';
-import 'package:PiliPalaX/utils/utils.dart';
+import 'package:PiliMini/common/widgets/stat/danmu.dart';
+import 'package:PiliMini/common/widgets/stat/view.dart';
+import 'package:PiliMini/utils/utils.dart';
 
 class IntroDetail extends StatelessWidget {
   const IntroDetail({

@@ -5,18 +5,21 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/http/common.dart';
-import 'package:PiliPalaX/pages/dynamics/index.dart';
-import 'package:PiliPalaX/pages/home/view.dart';
-import 'package:PiliPalaX/pages/media/index.dart';
-import 'package:PiliPalaX/utils/storage.dart';
-import 'package:PiliPalaX/utils/utils.dart';
+import 'package:PiliMini/http/common.dart';
+import 'package:PiliMini/pages/dynamics/index.dart';
+import 'package:PiliMini/pages/home/view.dart';
+import 'package:PiliMini/pages/media/index.dart';
+import 'package:PiliMini/utils/storage.dart';
+import 'package:PiliMini/utils/utils.dart';
 import '../../models/common/dynamic_badge_mode.dart';
 import '../../models/common/nav_bar_config.dart';
 
+import 'package:PiliMini/pages/login/index.dart';
+
 class MainController extends GetxController {
   List<Widget> pages = <Widget>[
-    const HomePage(),
+    // const HomePage(),
+    // const LoginPage(),
     // const RankPage(),
     const DynamicsPage(),
     const MediaPage(),
@@ -41,7 +44,7 @@ class MainController extends GetxController {
     }
     hideTabBar = setting.get(SettingBoxKey.hideTabBar, defaultValue: false);
     int defaultHomePage =
-        setting.get(SettingBoxKey.defaultHomePage, defaultValue: 0) as int;
+        setting.get(SettingBoxKey.defaultHomePage, defaultValue: 1) as int;
     selectedIndex = defaultNavigationBars
         .indexWhere((item) => item['id'] == defaultHomePage);
     var userInfo = userInfoCache.get('userInfoCache');

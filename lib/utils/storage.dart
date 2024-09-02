@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:PiliPalaX/models/model_owner.dart';
-import 'package:PiliPalaX/models/search/hot.dart';
-import 'package:PiliPalaX/models/user/info.dart';
+import 'package:PiliMini/models/model_owner.dart';
+import 'package:PiliMini/models/search/hot.dart';
+import 'package:PiliMini/models/user/info.dart';
 import 'global_data.dart';
 
 class GStorage {

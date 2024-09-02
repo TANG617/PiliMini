@@ -2,12 +2,12 @@ import 'package:easy_debounce/easy_throttle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/skeleton/video_reply.dart';
-import 'package:PiliPalaX/models/common/reply_type.dart';
-import 'package:PiliPalaX/pages/video/detail/index.dart';
-import 'package:PiliPalaX/pages/video/detail/reply_new/index.dart';
-import 'package:PiliPalaX/utils/feed_back.dart';
-import 'package:PiliPalaX/utils/id_utils.dart';
+import 'package:PiliMini/common/skeleton/video_reply.dart';
+import 'package:PiliMini/models/common/reply_type.dart';
+import 'package:PiliMini/pages/video/detail/index.dart';
+import 'package:PiliMini/pages/video/detail/reply_new/index.dart';
+import 'package:PiliMini/utils/feed_back.dart';
+import 'package:PiliMini/utils/id_utils.dart';
 import 'controller.dart';
 import 'widgets/reply_item.dart';
 

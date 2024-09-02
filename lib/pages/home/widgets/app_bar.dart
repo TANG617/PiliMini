@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/pages/mine/view.dart';
-import 'package:PiliPalaX/utils/storage.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/pages/mine/view.dart';
+import 'package:PiliMini/utils/storage.dart';
 
 Box userInfoCache = GStorage.userInfo;
 

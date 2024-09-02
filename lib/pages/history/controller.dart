@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/http/user.dart';
-import 'package:PiliPalaX/models/user/history.dart';
-import 'package:PiliPalaX/utils/storage.dart';
+import 'package:PiliMini/http/user.dart';
+import 'package:PiliMini/models/user/history.dart';
+import 'package:PiliMini/utils/storage.dart';
 
 class HistoryController extends GetxController {
   final ScrollController scrollController = ScrollController();
@@ -60,9 +60,7 @@ class HistoryController extends GetxController {
           content:
               Text(!pauseStatus.value ? '啊叻？你要暂停历史记录功能吗？' : '啊叻？要恢复历史记录功能吗？'),
           actions: [
-            TextButton(
-                onPressed: () => Get.back(),
-                child: const Text('取消')),
+            TextButton(onPressed: () => Get.back(), child: const Text('取消')),
             TextButton(
               onPressed: () async {
                 SmartDialog.showLoading(msg: '请求中');
@@ -104,9 +102,7 @@ class HistoryController extends GetxController {
           title: const Text('提示'),
           content: const Text('啊叻？你要清空历史记录功能吗？'),
           actions: [
-            TextButton(
-                onPressed: () => Get.back(),
-                child: const Text('取消')),
+            TextButton(onPressed: () => Get.back(), child: const Text('取消')),
             TextButton(
               onPressed: () async {
                 SmartDialog.showLoading(msg: '请求中');

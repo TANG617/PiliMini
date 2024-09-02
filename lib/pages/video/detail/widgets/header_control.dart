@@ -12,16 +12,16 @@ import 'package:hive/hive.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:ns_danmaku/ns_danmaku.dart';
-import 'package:PiliPalaX/http/user.dart';
-import 'package:PiliPalaX/models/video/play/quality.dart';
-import 'package:PiliPalaX/models/video/play/url.dart';
-import 'package:PiliPalaX/pages/video/detail/index.dart';
-import 'package:PiliPalaX/pages/video/detail/introduction/widgets/menu_row.dart';
-import 'package:PiliPalaX/plugin/pl_player/index.dart';
-import 'package:PiliPalaX/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPalaX/utils/storage.dart';
-import 'package:PiliPalaX/http/danmaku.dart';
-import 'package:PiliPalaX/services/shutdown_timer_service.dart';
+import 'package:PiliMini/http/user.dart';
+import 'package:PiliMini/models/video/play/quality.dart';
+import 'package:PiliMini/models/video/play/url.dart';
+import 'package:PiliMini/pages/video/detail/index.dart';
+import 'package:PiliMini/pages/video/detail/introduction/widgets/menu_row.dart';
+import 'package:PiliMini/plugin/pl_player/index.dart';
+import 'package:PiliMini/plugin/pl_player/models/play_repeat.dart';
+import 'package:PiliMini/utils/storage.dart';
+import 'package:PiliMini/http/danmaku.dart';
+import 'package:PiliMini/services/shutdown_timer_service.dart';
 import '../../../../models/video/play/CDN.dart';
 import '../../../../models/video_detail_res.dart';
 import '../../../setting/widgets/select_dialog.dart';
@@ -400,7 +400,7 @@ class _HeaderControlState extends State<HeaderControl> {
                                             Clipboard.setData(
                                               ClipboardData(
                                                 text:
-                                                "rate\n${player.state.rate}",
+                                                    "rate\n${player.state.rate}",
                                               ),
                                             );
                                           }),

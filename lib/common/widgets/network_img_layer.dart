@@ -2,8 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/utils/extension.dart';
-import 'package:PiliPalaX/utils/global_data.dart';
+import 'package:PiliMini/utils/extension.dart';
+import 'package:PiliMini/utils/global_data.dart';
 import '../../utils/storage.dart';
 import '../constants.dart';
 
@@ -66,7 +66,8 @@ class NetworkImgLayer extends StatelessWidget {
             child: CachedNetworkImage(
               imageUrl: imageUrl,
               width: width,
-              height: ignoreHeight == null || ignoreHeight == false? height:null,
+              height:
+                  ignoreHeight == null || ignoreHeight == false ? height : null,
               memCacheWidth: memCacheWidth,
               memCacheHeight: memCacheHeight,
               fit: BoxFit.cover,

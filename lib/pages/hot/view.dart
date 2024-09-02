@@ -3,15 +3,15 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/constants.dart';
-import 'package:PiliPalaX/common/widgets/animated_dialog.dart';
-import 'package:PiliPalaX/common/widgets/overlay_pop.dart';
-import 'package:PiliPalaX/common/skeleton/video_card_h.dart';
-import 'package:PiliPalaX/common/widgets/http_error.dart';
-import 'package:PiliPalaX/common/widgets/video_card_h.dart';
-import 'package:PiliPalaX/pages/home/index.dart';
-import 'package:PiliPalaX/pages/hot/controller.dart';
-import 'package:PiliPalaX/pages/main/index.dart';
+import 'package:PiliMini/common/constants.dart';
+import 'package:PiliMini/common/widgets/animated_dialog.dart';
+import 'package:PiliMini/common/widgets/overlay_pop.dart';
+import 'package:PiliMini/common/skeleton/video_card_h.dart';
+import 'package:PiliMini/common/widgets/http_error.dart';
+import 'package:PiliMini/common/widgets/video_card_h.dart';
+import 'package:PiliMini/pages/home/index.dart';
+import 'package:PiliMini/pages/hot/controller.dart';
+import 'package:PiliMini/pages/main/index.dart';
 
 import '../../utils/grid.dart';
 

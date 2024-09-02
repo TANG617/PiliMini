@@ -5,9 +5,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/utils/utils.dart';
-import 'package:PiliPalaX/utils/storage.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/utils/utils.dart';
+import 'package:PiliMini/utils/storage.dart';
 
 import '../../../http/search.dart';
 
@@ -84,8 +84,7 @@ class ChatItem extends StatelessWidget {
             final String emojiKey = match[0]!;
             print(emojiKey);
             if (emojiMap.containsKey(emojiKey)) {
-              children.add(
-                  WidgetSpan(
+              children.add(WidgetSpan(
                 child: NetworkImgLayer(
                   width: 18,
                   height: 18,

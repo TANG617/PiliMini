@@ -3,15 +3,15 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/constants.dart';
-import 'package:PiliPalaX/common/widgets/animated_dialog.dart';
-import 'package:PiliPalaX/common/widgets/overlay_pop.dart';
-import 'package:PiliPalaX/common/skeleton/video_card_h.dart';
-import 'package:PiliPalaX/common/widgets/http_error.dart';
-import 'package:PiliPalaX/common/widgets/video_card_h.dart';
-import 'package:PiliPalaX/pages/home/index.dart';
-import 'package:PiliPalaX/pages/main/index.dart';
-import 'package:PiliPalaX/pages/rank/zone/index.dart';
+import 'package:PiliMini/common/constants.dart';
+import 'package:PiliMini/common/widgets/animated_dialog.dart';
+import 'package:PiliMini/common/widgets/overlay_pop.dart';
+import 'package:PiliMini/common/skeleton/video_card_h.dart';
+import 'package:PiliMini/common/widgets/http_error.dart';
+import 'package:PiliMini/common/widgets/video_card_h.dart';
+import 'package:PiliMini/pages/home/index.dart';
+import 'package:PiliMini/pages/main/index.dart';
+import 'package:PiliMini/pages/rank/zone/index.dart';
 
 import '../../../utils/grid.dart';
 
@@ -84,8 +84,8 @@ class _ZonePageState extends State<ZonePage>
         slivers: [
           SliverPadding(
             // 单列布局 EdgeInsets.zero
-            padding:
-                const EdgeInsets.fromLTRB(StyleString.cardSpace, StyleString.safeSpace, 0, 0),
+            padding: const EdgeInsets.fromLTRB(
+                StyleString.cardSpace, StyleString.safeSpace, 0, 0),
             sliver: FutureBuilder(
               future: _futureBuilderFuture,
               builder: (context, snapshot) {

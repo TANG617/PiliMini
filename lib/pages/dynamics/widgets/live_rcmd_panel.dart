@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/constants.dart';
-import 'package:PiliPalaX/common/widgets/badge.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/models/dynamics/result.dart';
-import 'package:PiliPalaX/pages/dynamics/index.dart';
-import 'package:PiliPalaX/utils/utils.dart';
+import 'package:PiliMini/common/constants.dart';
+import 'package:PiliMini/common/widgets/badge.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/models/dynamics/result.dart';
+import 'package:PiliMini/pages/dynamics/index.dart';
+import 'package:PiliMini/utils/utils.dart';
 
 import 'rich_node_panel.dart';
 

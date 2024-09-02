@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/constants.dart';
-import 'package:PiliPalaX/models/live/item.dart';
-import 'package:PiliPalaX/utils/utils.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/common/constants.dart';
+import 'package:PiliMini/models/live/item.dart';
+import 'package:PiliMini/utils/utils.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
 
 // 视频卡片 - 垂直布局
 class LiveCardV extends StatelessWidget {
@@ -60,18 +60,18 @@ class LiveCardV extends StatelessWidget {
                             height: maxHeight,
                           ),
                         ),
-                          Positioned(
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            child: AnimatedOpacity(
-                              opacity: 1,
-                              duration: const Duration(milliseconds: 200),
-                              child: VideoStat(
-                                liveItem: liveItem,
-                              ),
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          child: AnimatedOpacity(
+                            opacity: 1,
+                            duration: const Duration(milliseconds: 200),
+                            child: VideoStat(
+                              liveItem: liveItem,
                             ),
                           ),
+                        ),
                       ],
                     );
                   }),
@@ -88,9 +88,7 @@ class LiveCardV extends StatelessWidget {
 
 class LiveContent extends StatelessWidget {
   final dynamic liveItem;
-  const LiveContent(
-      {Key? key, required this.liveItem})
-      : super(key: key);
+  const LiveContent({Key? key, required this.liveItem}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Expanded(

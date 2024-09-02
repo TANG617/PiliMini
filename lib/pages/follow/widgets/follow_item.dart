@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/models/follow/result.dart';
-import 'package:PiliPalaX/pages/follow/index.dart';
-import 'package:PiliPalaX/pages/video/detail/introduction/widgets/group_panel.dart';
-import 'package:PiliPalaX/utils/feed_back.dart';
-import 'package:PiliPalaX/utils/utils.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/models/follow/result.dart';
+import 'package:PiliMini/pages/follow/index.dart';
+import 'package:PiliMini/pages/video/detail/introduction/widgets/group_panel.dart';
+import 'package:PiliMini/utils/feed_back.dart';
+import 'package:PiliMini/utils/utils.dart';
 
 class FollowItem extends StatelessWidget {
   final FollowItemModel item;

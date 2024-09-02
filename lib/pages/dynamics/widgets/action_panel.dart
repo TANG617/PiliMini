@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/http/dynamics.dart';
-import 'package:PiliPalaX/models/dynamics/result.dart';
-import 'package:PiliPalaX/pages/dynamics/index.dart';
-import 'package:PiliPalaX/utils/feed_back.dart';
+import 'package:PiliMini/http/dynamics.dart';
+import 'package:PiliMini/models/dynamics/result.dart';
+import 'package:PiliMini/pages/dynamics/index.dart';
+import 'package:PiliMini/utils/feed_back.dart';
 
 class ActionPanel extends StatefulWidget {
   const ActionPanel({
@@ -81,7 +81,7 @@ class _ActionPanelState extends State<ActionPanel> {
           flex: 1,
           child: TextButton.icon(
             onPressed: () {
-                SmartDialog.showToast('暂不支持');
+              SmartDialog.showToast('暂不支持');
             },
             icon: const Icon(
               FontAwesomeIcons.shareFromSquare,
@@ -122,7 +122,7 @@ class _ActionPanelState extends State<ActionPanel> {
                   : FontAwesomeIcons.thumbsUp,
               size: 16,
               color: stat.like!.status! ? primary : color,
-              semanticLabel: stat.like!.status! ? "已赞": "点赞",
+              semanticLabel: stat.like!.status! ? "已赞" : "点赞",
             ),
             style: TextButton.styleFrom(
               padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),

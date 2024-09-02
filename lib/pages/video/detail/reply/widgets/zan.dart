@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:PiliPalaX/http/reply.dart';
-import 'package:PiliPalaX/models/common/reply_type.dart';
-import 'package:PiliPalaX/models/video/reply/item.dart';
-import 'package:PiliPalaX/utils/feed_back.dart';
+import 'package:PiliMini/http/reply.dart';
+import 'package:PiliMini/models/common/reply_type.dart';
+import 'package:PiliMini/models/video/reply/item.dart';
+import 'package:PiliMini/utils/feed_back.dart';
 
 class ZanButton extends StatefulWidget {
   const ZanButton({

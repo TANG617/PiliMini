@@ -3,10 +3,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/constants.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/models/common/theme_type.dart';
-import 'package:PiliPalaX/models/user/info.dart';
+import 'package:PiliMini/common/constants.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/models/common/theme_type.dart';
+import 'package:PiliMini/models/user/info.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'controller.dart';
 

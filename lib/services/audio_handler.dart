@@ -1,10 +1,10 @@
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/models/bangumi/info.dart';
-import 'package:PiliPalaX/models/video_detail_res.dart';
-import 'package:PiliPalaX/plugin/pl_player/index.dart';
-import 'package:PiliPalaX/utils/storage.dart';
+import 'package:PiliMini/models/bangumi/info.dart';
+import 'package:PiliMini/models/video_detail_res.dart';
+import 'package:PiliMini/plugin/pl_player/index.dart';
+import 'package:PiliMini/utils/storage.dart';
 
 Future<VideoPlayerServiceHandler> initAudioService() async {
   return await AudioService.init(
@@ -64,7 +64,7 @@ class VideoPlayerServiceHandler extends BaseAudioHandler with SeekHandler {
     // print(newMediaItem);
     // print(newMediaItem.title);
     // debugPrint(StackTrace.current.toString());
-    if(!mediaItem.isClosed) mediaItem.add(newMediaItem);
+    if (!mediaItem.isClosed) mediaItem.add(newMediaItem);
   }
 
   Future<void> setPlaybackState(PlayerStatus status, bool isBuffering) async {

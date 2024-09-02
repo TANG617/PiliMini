@@ -2,7 +2,7 @@ import 'package:easy_debounce/easy_throttle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
 
 import '../../../utils/app_scheme.dart';
 import 'controller.dart';
@@ -63,8 +63,8 @@ class _AtMePageState extends State<AtMePage> {
                   itemBuilder: (_, int i) {
                     return ListTile(
                       onTap: () {
-                        String? nativeUri = _atMeController
-                                .msgFeedAtMeList[i].item?.nativeUri;
+                        String? nativeUri =
+                            _atMeController.msgFeedAtMeList[i].item?.nativeUri;
                         if (nativeUri != null) {
                           PiliScheme.routePush(Uri.parse(nativeUri));
                         }

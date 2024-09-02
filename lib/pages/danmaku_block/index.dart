@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/utils/storage.dart';
+import 'package:PiliMini/utils/storage.dart';
 
 import '../../http/danmaku_block.dart';
 import '../../models/user/danmaku_block.dart';

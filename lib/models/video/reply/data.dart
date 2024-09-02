@@ -1,4 +1,4 @@
-import 'package:PiliPalaX/models/video/reply/item.dart';
+import 'package:PiliMini/models/video/reply/item.dart';
 
 import 'config.dart';
 import 'page.dart';
@@ -23,14 +23,12 @@ class ReplyData {
     cursor = ReplyCursor.fromJson(json['cursor']);
     config = ReplyConfig.fromJson(json['config']);
     replies = json['replies'] != null
-        ? List<ReplyItemModel>.from(json['replies']
-            .map<ReplyItemModel>(
-                (item) => ReplyItemModel.fromJson(item, json['upper']['mid'])))
+        ? List<ReplyItemModel>.from(json['replies'].map<ReplyItemModel>(
+            (item) => ReplyItemModel.fromJson(item, json['upper']['mid'])))
         : <ReplyItemModel>[];
     topReplies = json['top_replies'] != null
-        ? List<ReplyItemModel>.from(json['top_replies']
-            .map<ReplyItemModel>((item) => ReplyItemModel.fromJson(
-                item, json['upper']['mid'],
+        ? List<ReplyItemModel>.from(json['top_replies'].map<ReplyItemModel>(
+            (item) => ReplyItemModel.fromJson(item, json['upper']['mid'],
                 isTopStatus: true)))
         : <ReplyItemModel>[];
     upper = ReplyUpper.fromJson(json['upper']);
@@ -58,15 +56,13 @@ class ReplyReplyData {
     page = ReplyPage.fromJson(json['page']);
     config = ReplyConfig.fromJson(json['config']);
     replies = json['replies'] != null
-        ? List<ReplyItemModel>.from(json['replies']
-        .map<ReplyItemModel>(
+        ? List<ReplyItemModel>.from(json['replies'].map<ReplyItemModel>(
             (item) => ReplyItemModel.fromJson(item, json['upper']['mid'])))
         : <ReplyItemModel>[];
     topReplies = json['top_replies'] != null
-        ? List<ReplyItemModel>.from(json['top_replies']
-        .map<ReplyItemModel>((item) => ReplyItemModel.fromJson(
-        item, json['upper']['mid'],
-        isTopStatus: true)))
+        ? List<ReplyItemModel>.from(json['top_replies'].map<ReplyItemModel>(
+            (item) => ReplyItemModel.fromJson(item, json['upper']['mid'],
+                isTopStatus: true)))
         : <ReplyItemModel>[];
     upper = ReplyUpper.fromJson(json['upper']);
     root = ReplyItemModel.fromJson(json['root'], json['upper']['mid']);

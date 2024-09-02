@@ -6,11 +6,11 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:PiliPalaX/http/index.dart';
-import 'package:PiliPalaX/models/github/latest.dart';
-import 'package:PiliPalaX/pages/setting/controller.dart';
-import 'package:PiliPalaX/utils/storage.dart';
-import 'package:PiliPalaX/utils/utils.dart';
+import 'package:PiliMini/http/index.dart';
+import 'package:PiliMini/models/github/latest.dart';
+import 'package:PiliMini/pages/setting/controller.dart';
+import 'package:PiliMini/utils/storage.dart';
+import 'package:PiliMini/utils/utils.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../utils/cache_manage.dart';
 

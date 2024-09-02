@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/models/user/fav_folder.dart';
-import 'package:PiliPalaX/pages/main/index.dart';
-import 'package:PiliPalaX/pages/media/index.dart';
-import 'package:PiliPalaX/utils/utils.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/models/user/fav_folder.dart';
+import 'package:PiliMini/pages/main/index.dart';
+import 'package:PiliMini/pages/media/index.dart';
+import 'package:PiliMini/utils/utils.dart';
 
 class MediaPage extends StatefulWidget {
   const MediaPage({super.key});
@@ -100,7 +100,8 @@ class _MediaPageState extends State<MediaPage>
                     Icons.settings_outlined,
                     size: 20,
                   ),
-                )),
+                )
+                ),
             for (var i in mediaController.list) ...[
               ListTile(
                 onTap: () => i['onTap'](),

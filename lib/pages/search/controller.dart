@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_rx/src/rx_workers/utils/debouncer.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/http/search.dart';
-import 'package:PiliPalaX/models/search/hot.dart';
-import 'package:PiliPalaX/models/search/suggest.dart';
-import 'package:PiliPalaX/utils/storage.dart';
+import 'package:PiliMini/http/search.dart';
+import 'package:PiliMini/models/search/hot.dart';
+import 'package:PiliMini/models/search/suggest.dart';
+import 'package:PiliMini/utils/storage.dart';
 
 class SSearchController extends GetxController {
   final FocusNode searchFocusNode = FocusNode();
@@ -36,7 +36,7 @@ class SSearchController extends GetxController {
         searchKeyWord.value = hintText;
       }
     }
-    historyCacheList = List<String>.from(historyWord.get('cacheList')??[]);
+    historyCacheList = List<String>.from(historyWord.get('cacheList') ?? []);
     historyList.value = historyCacheList;
     enableHotKey = setting.get(SettingBoxKey.enableHotKey, defaultValue: true);
   }
@@ -64,12 +64,13 @@ class SSearchController extends GetxController {
   void submit() {
     // ignore: unrelated_type_equality_checks
     if (searchKeyWord == '') {
-      if (hintText == ''){
+      if (hintText == '') {
         return;
       }
       searchKeyWord.value = hintText;
     }
-    List<String> arr = historyCacheList.where((e) => e != searchKeyWord.value).toList();
+    List<String> arr =
+        historyCacheList.where((e) => e != searchKeyWord.value).toList();
     arr.insert(0, searchKeyWord.value);
     historyCacheList = arr;
 

@@ -1,6 +1,6 @@
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/http/msg.dart';
+import 'package:PiliMini/http/msg.dart';
 
 import '../../../models/msg/msgfeed_sys_msg.dart';
 
@@ -50,6 +50,7 @@ class SysMsgController extends GetxController {
       return false;
     }
   }
+
   Future onLoad() async {
     if (isEnd) return;
     queryMsgFeedSysMsg();

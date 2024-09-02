@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/pages/rank/zone/index.dart';
+import 'package:PiliMini/pages/rank/zone/index.dart';
 
 enum RandType {
   all,

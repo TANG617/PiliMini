@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/pages/emote/index.dart';
-import 'package:PiliPalaX/pages/whisper_detail/controller.dart';
-import 'package:PiliPalaX/utils/feed_back.dart';
-import 'package:PiliPalaX/models/video/reply/emote.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/pages/emote/index.dart';
+import 'package:PiliMini/pages/whisper_detail/controller.dart';
+import 'package:PiliMini/utils/feed_back.dart';
+import 'package:PiliMini/models/video/reply/emote.dart';
 import '../../utils/storage.dart';
 import 'widget/chat_item.dart';
 

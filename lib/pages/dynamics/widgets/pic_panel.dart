@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/constants.dart';
-import 'package:PiliPalaX/common/widgets/badge.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
-import 'package:PiliPalaX/pages/preview/index.dart';
+import 'package:PiliMini/common/constants.dart';
+import 'package:PiliMini/common/widgets/badge.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/pages/preview/index.dart';
 
 Widget picWidget(item, context) {
   String type = item.modules.moduleDynamic.major.type;

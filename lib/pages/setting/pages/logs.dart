@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:PiliPalaX/common/widgets/no_data.dart';
+import 'package:PiliMini/common/widgets/no_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../services/loggeer.dart';
 
@@ -52,7 +52,7 @@ class _LogsPageState extends State<LogsPage> {
             if (l.startsWith("Crash occurred on")) {
               try {
                 date = DateTime.parse(
-                  l.split("Crash occurred on")[1].trim(),//.split('.')[0],
+                  l.split("Crash occurred on")[1].trim(), //.split('.')[0],
                 );
               } catch (e) {
                 debugPrint(e.toString());

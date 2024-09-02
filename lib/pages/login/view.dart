@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:PiliPalaX/common/constants.dart';
+import 'package:PiliMini/common/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -416,10 +416,10 @@ class _LoginPageState extends State<LoginPage> {
       return Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          leading: IconButton(
-              tooltip: '关闭',
-              icon: const Icon(Icons.close_outlined),
-              onPressed: Get.back),
+          // leading: IconButton(
+          //     tooltip: '关闭',
+          //     icon: const Icon(Icons.close_outlined),
+          //     onPressed: Get.back),
           title: Row(children: [
             const Text('登录'),
             if (orientation == Orientation.landscape) ...[
@@ -479,5 +479,4 @@ class _LoginPageState extends State<LoginPage> {
               child: child,
             )));
   }
-
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:PiliPalaX/utils/feed_back.dart';
+import 'package:PiliMini/utils/feed_back.dart';
 
 class MenuRow extends StatelessWidget {
   const MenuRow({

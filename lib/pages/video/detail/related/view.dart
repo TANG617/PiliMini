@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/skeleton/video_card_h.dart';
-import 'package:PiliPalaX/common/widgets/animated_dialog.dart';
-import 'package:PiliPalaX/common/widgets/http_error.dart';
-import 'package:PiliPalaX/common/widgets/overlay_pop.dart';
-import 'package:PiliPalaX/common/widgets/video_card_h.dart';
+import 'package:PiliMini/common/skeleton/video_card_h.dart';
+import 'package:PiliMini/common/widgets/animated_dialog.dart';
+import 'package:PiliMini/common/widgets/http_error.dart';
+import 'package:PiliMini/common/widgets/overlay_pop.dart';
+import 'package:PiliMini/common/widgets/video_card_h.dart';
 import '../../../../common/constants.dart';
 import '../../../../utils/grid.dart';
 import './controller.dart';
@@ -85,10 +85,12 @@ class _RelatedVideoPanelState extends State<RelatedVideoPanel>
                 );
               } else {
                 // 请求错误
-                return HttpError(errMsg: '出错了', fn: () {
-                  _futureBuilder = _relatedController.queryRelatedVideo();
-                  _futureBuilder.then((value) => setState(() {}));
-                });
+                return HttpError(
+                    errMsg: '出错了',
+                    fn: () {
+                      _futureBuilder = _relatedController.queryRelatedVideo();
+                      _futureBuilder.then((value) => setState(() {}));
+                    });
               }
             } else {
               // 骨架屏

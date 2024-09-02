@@ -1,15 +1,15 @@
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'package:PiliPalaX/common/constants.dart';
-import 'package:PiliPalaX/common/widgets/stat/danmu.dart';
-import 'package:PiliPalaX/common/widgets/stat/view.dart';
-import 'package:PiliPalaX/http/search.dart';
-import 'package:PiliPalaX/http/video.dart';
-import 'package:PiliPalaX/models/common/search_type.dart';
-import 'package:PiliPalaX/utils/id_utils.dart';
-import 'package:PiliPalaX/utils/utils.dart';
-import 'package:PiliPalaX/common/widgets/network_img_layer.dart';
+import 'package:PiliMini/common/constants.dart';
+import 'package:PiliMini/common/widgets/stat/danmu.dart';
+import 'package:PiliMini/common/widgets/stat/view.dart';
+import 'package:PiliMini/http/search.dart';
+import 'package:PiliMini/http/video.dart';
+import 'package:PiliMini/models/common/search_type.dart';
+import 'package:PiliMini/utils/id_utils.dart';
+import 'package:PiliMini/utils/utils.dart';
+import 'package:PiliMini/common/widgets/network_img_layer.dart';
 import '../../../common/widgets/badge.dart';
 
 // 收藏视频卡片 - 水平布局

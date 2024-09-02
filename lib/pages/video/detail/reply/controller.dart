@@ -2,12 +2,12 @@ import 'package:easy_debounce/easy_throttle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:PiliPalaX/http/reply.dart';
-import 'package:PiliPalaX/models/common/reply_sort_type.dart';
-import 'package:PiliPalaX/models/common/reply_type.dart';
-import 'package:PiliPalaX/models/video/reply/item.dart';
-import 'package:PiliPalaX/utils/feed_back.dart';
-import 'package:PiliPalaX/utils/storage.dart';
+import 'package:PiliMini/http/reply.dart';
+import 'package:PiliMini/models/common/reply_sort_type.dart';
+import 'package:PiliMini/models/common/reply_type.dart';
+import 'package:PiliMini/models/video/reply/item.dart';
+import 'package:PiliMini/utils/feed_back.dart';
+import 'package:PiliMini/utils/storage.dart';
 
 class VideoReplyController extends GetxController {
   VideoReplyController(
@@ -77,7 +77,6 @@ class VideoReplyController extends GetxController {
         if (res['data'].cursor.isEnd == true) {
           noMore.value = '没有更多了';
         }
-
       } else {
         // 未登录状态replies可能返回null
         noMore.value = nextOffset == "" && type == 'init' ? '还没有评论' : '没有更多了';

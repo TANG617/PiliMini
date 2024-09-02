@@ -1,8 +1,8 @@
 import 'package:easy_debounce/easy_throttle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:PiliPalaX/common/widgets/video_card_h.dart';
-import 'package:PiliPalaX/utils/utils.dart';
+import 'package:PiliMini/common/widgets/video_card_h.dart';
+import 'package:PiliMini/utils/utils.dart';
 import '../../common/constants.dart';
 import '../../common/widgets/http_error.dart';
 import '../../utils/grid.dart';
