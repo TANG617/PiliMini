@@ -5,7 +5,7 @@
 
 
 <div align="center">
-    <h1>PiliPalaX</h1>
+    <h1>PiliMini</h1>
 <div align="center">
     
 ![GitHub repo size](https://img.shields.io/github/repo-size/orz12/pilipala) 
@@ -132,7 +132,7 @@ QQ频道: https://pd.qq.com/s/3n0b3m5dm
 
 ## 声明
 
-此项目（PiliPalaX）是个人为了兴趣而开发, 仅用于学习和测试，请于下载后24小时内删除。
+此项目（PiliMini）是个人为了兴趣而开发, 仅用于学习和测试，请于下载后24小时内删除。
 所用API皆从官方网站收集, 不提供任何破解内容。
 在此致敬原作者：[guozhigq/pilipala](https://github.com/guozhigq/pilipala)
 本仓库做了更激进的修改，感谢原作者的开源精神。

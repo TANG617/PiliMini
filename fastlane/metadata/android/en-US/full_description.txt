@@ -1,4 +1,4 @@
-PiliPalaX is a third-party Bilibili client developed in Flutter, 
+PiliMini is a third-party Bilibili client developed in Flutter, 
 fork from PiliPala (https://github.com/guozhigq/pilipala).
 
 Top Features:

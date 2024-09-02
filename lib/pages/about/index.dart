@@ -58,7 +58,7 @@ class _AboutPageState extends State<AboutPage> {
             )),
           ),
           ListTile(
-            title: Text('PiliPalaX',
+            title: Text('PiliMini',
                 textAlign: TextAlign.center,
                 style: Theme.of(context)
                     .textTheme
@@ -122,7 +122,7 @@ class _AboutPageState extends State<AboutPage> {
             leading: const Icon(Icons.star_outline_outlined),
             title: const Text('Github开源仓库'),
             trailing: Text(
-              'github.com/orz12/PiliPalaX',
+              'github.com/orz12/PiliMini',
               style: subTitleStyle,
             ),
           ),
@@ -464,7 +464,7 @@ class AboutController extends GetxController {
   // aPay() {
   //   try {
   //     launchUrl(
-  //       Uri.parse('https://pilipalanet.mysxl.cn/pilipalaxadmire'),
+  //       Uri.parse('https://pilipalanet.mysxl.cn/PiliMiniadmire'),
   //       mode: LaunchMode.externalApplication,
   //     );
   //   } catch (e) {

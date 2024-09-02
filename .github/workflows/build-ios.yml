@@ -90,7 +90,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           if-no-files-found: error
-          name: PiliPalaX-iOS
+          name: PiliMini-iOS
           path: |
             build/Pili-*.ipa
 
@@ -104,8 +104,8 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: PiliPalaX-iOS
-          path: ./PiliPalaX-iOS
+          name: PiliMini-iOS
+          path: ./PiliMini-iOS
           
       # - name: Upload Pre-release
       #   uses: ncipollo/release-action@v1
@@ -125,6 +125,6 @@ jobs:
           chat_id: ${{ secrets.CHAT_ID }}
           large_file: false
           method: sendFile
-          path: PiliPalaX-iOS/*
+          path: PiliMini-iOS/*
           parse_mode: Markdown
           context: "*v${{ needs.update_version.outputs.new_version }}*\n${{ needs.update_version.outputs.last_commit }}"

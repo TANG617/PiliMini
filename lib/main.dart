@@ -103,7 +103,7 @@ class MyApp extends StatelessWidget {
     Box setting = GStorage.setting;
     // 主题色
     Color defaultColor =
-        colorThemeTypes[setting.get(SettingBoxKey.customColor, defaultValue: 0)]
+        colorThemeTypes[setting.get(SettingBoxKey.customColor, defaultValue: 18)]
             ['color'];
     Color brandColor = defaultColor;
     // 主题模式
@@ -155,7 +155,7 @@ class MyApp extends StatelessWidget {
         // PaintingBinding.instance.imageCache.maximumSizeBytes = 1000 << 20;
         return GetMaterialApp(
           // showSemanticsDebugger: true,
-          title: 'PiliPalaX',
+          title: 'PiliMini',
           theme: ThemeData(
             // fontFamily: 'HarmonyOS',
             colorScheme: currentThemeValue == ThemeType.dark

@@ -68,7 +68,7 @@ class MainController extends GetxController {
       if (selectedIndex != 0) {
         pageController.jumpTo(0);
       }
-      SmartDialog.showToast("再按一次退出PiliPalaX");
+      SmartDialog.showToast("再按一次退出PiliMini");
       return; // 不退出应用
     }
     SystemNavigator.pop(); // 退出应用

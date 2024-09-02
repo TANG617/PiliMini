@@ -55,7 +55,7 @@ class _MinePageState extends State<MinePage> {
               ),
               const SizedBox(width: 5),
               Text(
-                'PiliPalaX',
+                'PiliMini',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               const SizedBox(width: 30),
